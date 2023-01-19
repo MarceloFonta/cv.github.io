@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CV</title>
+
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+<style> @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap'); </style>
+
+</head>
+
+<body>
+
+ <div class="contenedor-portada">
+    <header class="header">
+        <ul>
+        <a href="#sobreMi">Sobre mi</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contactame">Contáctame</a>
+        </ul>
+    </header>
+
+<div class="contenedor-cv">
+        <h1 id="cv-nombre">Marcelo Fontana</h1>
+        <h2 id="cv-profesion">Desarrollador Front-End</h2>
+    </div>
+</div>
+
+
+    <div class="contenedor-sobreMi">
+        <h2 class="contenedor-titulo" id="sobreMi">Sobre mi</h2>
+        <article class="sobreMi">
+            <img src="./Imagenes/Foto-perfil.png" id="sobreMi-foto" alt="Foto de perfil"/>
+            <section>
+                <div id="sobreMi-nombre">Marcelo Fontana</div>
+                <p id="sobreMi-informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt interdum ornare. Maecenas et magna et lectus lobortis finibus. Pellentesque iaculis sapien at ligula malesuada, ac mattis dolor efficitur. Nam convallis vestibulum feugiat. Pellentesque sollicitudin bibendum quam nec consequat. Aenean eget justo non ante condimentum iaculis at a sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras hendrerit magna et mattis iaculis. Pellentesque pharetra nisl id ipsum euismod, vitae rhoncus lectus tincidunt. Vestibulum orci diam, vestibulum nec neque vitae, pellentesque semper ligula. Suspendisse at justo dapibus, mattis nunc sed, molestie elit. </p>
+            </section>
+        </article>
+    </div>
+
+    <div class="contenedor-habilidades">
+        
+        <h2 class="contenedor-titulo" id="habilidades">Habilidades</h2>
+        <div class="habilidades-imagenes">
+            <img src="./Imagenes/Html.png" alt="Logo de html"/>
+            <img id="imagenes-css" src="./Imagenes/Css.png" alt="Logo de css"/>
+            <img src="./Imagenes/js.png" alt="Logo de JavaScript"/>
+        </div>
+    </div>
+
+    <hr/>
+    <div class="contenedor-contactame">
+        <h2 class="contenedor-titulo" id="contactame">Contáctame</h2>
+
+        <article class="contactame">
+            <section class="contactame-datos-personales">
+                <div id="contactame-residencia">
+                    <img src="./Iconos/Locacion.svg" alt="Icono de locación"/>Argentina - Entre Ríos
+                </div>
+                <div id="contactame-telefono">
+                    <img src="./Iconos/Telefono.svg" alt="Icono de teléfono"/>+54 123-456-789
+                </div>
+            </section>
+
+            <form id="form" method="get">
+                
+
+                <label>
+                    Nombre
+                  <input type="text" id="nombre" name="nombre" />
+                  <div class="error"></div>
+                </label>
+                
+
+                <label>
+                    Correo
+                    <input type="email" id="correo" name="correo" />
+                    <div class="error"></div>
+                </label>
+
+                <label>
+                    Mensaje
+                    <textarea id="mensaje" type="text" name="mensaje" ></textarea>
+                    <div class="error"></div>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor-media">
+            <a href="https://www.facebook.com/" target="_blank" class="facebook" ><img src="./Iconos/Facebook.svg" alt="facebook-logo"/></a>
+            <a href="https://www.instagram.com/" target="_blank" class="instagram" ><img src="./Iconos/Instagram.svg" alt="instagram-logo"/></a>
+            <a href="https://github.com/Marcelofonta" target="_blank" class="github" ><img src="./Iconos/Github.svg" alt="github-logo"/></a>
+         </div>
+
+    </footer>    
+
+
+    <script src="codigo.js"></script>
+    
+</body>
+</html>
